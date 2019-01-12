@@ -300,6 +300,105 @@ body {
   width: 100%;
 }
 
+.hero__shape-love-1 {
+  position: absolute;
+  width: 75px;
+  top: 10%;
+  left: 5%;
+}
+
+.hero__shape-love-1 svg {
+  width: 100%;
+  height: auto;
+}
+
+.hero__shape-love-1 svg path {
+  fill: #fff;
+  opacity: .47;
+}
+
+.hero__shape-love-1 svg path.love-small {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.hero__shape-love-2 {
+  position: absolute;
+  width: 75px;
+  bottom: 10%;
+  left: 5%;
+}
+
+.hero__shape-love-2 svg {
+  width: 100%;
+  height: auto;
+}
+
+.hero__shape-love-2 svg path {
+  fill: #fff;
+  opacity: .47;
+}
+
+.hero__shape-love-2 svg path.love-small {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.hero__shape-love-3 {
+  position: absolute;
+  width: 75px;
+  right: 7%;
+  top: 10%;
+}
+
+.hero__shape-love-3 svg {
+  width: 100%;
+  height: auto;
+}
+
+.hero__shape-love-3 svg path {
+  fill: #fff;
+  opacity: .47;
+}
+
+.hero__shape-love-3 svg path.love-small {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.hero__shape-love-4 {
+  position: absolute;
+  width: 75px;
+  bottom: 3%;
+  right: 2%;
+}
+
+.hero__shape-love-4 svg {
+  width: 100%;
+  height: auto;
+}
+
+.hero__shape-love-4 svg path {
+  fill: #fff;
+  opacity: .47;
+}
+
+.hero__shape-love-4 svg path.love-small {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.hero__shape-small {
+  position: absolute;
+  width: 80%;
+  top: 5%;
+  left: 10%;
+}
+
+.hero__shape-small img {
+  width: 100%;
+}
+
 .hero__content h1, .hero__content p, .hero__content span {
   color: #fff;
 }
@@ -334,6 +433,7 @@ body {
   margin-left: 25px;
   background-image: linear-gradient(-53deg, #e9537a 0%, #ff9688 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -396,6 +496,30 @@ body {
   opacity: .3;
 }
 
+.process {
+  position: relative;
+}
+
+.process__shape-small {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.process__shape-small svg {
+  width: 100%;
+  height: 100%;
+}
+
+.process__shape-small svg path {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
 .process__item {
   display: flex;
   box-shadow: rgba(25, 28, 33, 0.1) 0px 85px 98px 0px;
@@ -444,6 +568,42 @@ body {
 
 .process__item .image .bg__shape-three img {
   width: 100%;
+}
+
+.process__item .image .shape-love {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  left: -140px;
+}
+
+.process__item .image .shape-love svg {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.process__item .image .shape-love svg path {
+  fill: #ef1d69;
+}
+
+.process__item .image .shape-love-2 {
+  width: 75px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.process__item .image .shape-love-2 svg {
+  width: 100%;
+  height: auto;
+}
+
+.process__item .image .shape-love-2 svg path {
+  fill: #fff;
 }
 
 .process__item .image .illustration__middle-one {
@@ -497,6 +657,14 @@ body {
   bottom: 0;
   width: 140px;
   z-index: 1;
+}
+
+.process__item .image .illustration__left-two {
+  position: absolute;
+  left: -7%;
+  bottom: 0;
+  width: 150px;
+  z-index: 2;
 }
 
 .process__item .image .illustration__left-three {
@@ -602,6 +770,22 @@ body {
   background-size: cover;
   background-position: top center;
   padding: 300px 0 100px;
+  position: relative;
+}
+
+.feature__shape-small {
+  position: absolute;
+  width: 80%;
+  height: 60%;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.feature__shape-small svg {
+  width: 100%;
+  height: 100%;
 }
 
 .feature__item {
@@ -733,6 +917,22 @@ body {
 
 .about {
   padding: 100px 0;
+  position: relative;
+}
+
+.about__shape-small {
+  position: absolute;
+  width: 80%;
+  height: 30%;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.about__shape-small svg {
+  width: 100%;
+  height: auto;
 }
 
 .about__image {
@@ -755,6 +955,22 @@ body {
   width: 80px;
   top: 30px;
   right: 0;
+}
+
+.about__image-love {
+  position: absolute;
+  width: 75px;
+  height: auto;
+  top: -80px;
+  right: 10%;
+}
+
+.about__image-love svg {
+  width: 100%;
+}
+
+.about__image-love svg path {
+  fill: #dc396a;
 }
 
 .footer {
