@@ -17,9 +17,14 @@ $(document).ready(function () {
   //  Headroom Initialize
   // -----------------------------
   $('.main-nav').headroom();
-  $('.process__item').matchHeight({
-      byRow: 0
+  $('.nav-list>.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
   });
+  if(screen.width > 991){
+    $('.process__item').matchHeight({
+        byRow: 0
+    });
+  }
   TweenMax.fromTo('.hero__shape-small', 2, 
     { y : 0, opacity: 1 }, 
     { y : 15, opacity: .5, repeat: -1, yoyo: true, ease: Power2.easeInOut}
