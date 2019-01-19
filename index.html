@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Like4Like</title>
-
-  
+    
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -33,7 +32,7 @@
           <img src="images/logo.png" alt="logo">
       </a>
       <!-- Toogle Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+      <button class="navbar-toggler" type="button" id="offCanvas">
           <span class="navbar-toggler-icon">
             <img src="images/nav-toogler.png" alt="menu-button">
           </span>
@@ -68,6 +67,31 @@
   </div>
 </nav>
 <!-- Navbar End -->
+
+<!-- Offcanvas Navigation Start -->
+<div class="nav-offcanvas">
+  <button type="button" class="close" id="offCanvasClose" aria-label="Close">
+    <i class="ti-close"></i>
+  </button>
+  <div class="nav-offcanvas-menu">
+    <ul>
+      <li><a href="#hero" class="page-scroll">Home</a></li>
+      <li><a href="#process" class="page-scroll">Process</a></li>
+      <li><a href="#feature" class="page-scroll">Features</a></li>
+      <li><a href="#review" class="page-scroll">Review</a></li>
+      <li><a href="#about" class="page-scroll">About</a></li>
+    </ul>
+    <!-- Sign In Button -->
+    <div class="nav-signin">
+      <a href="#" class="btn btn-nav">
+        <span>Signin</span>
+        <i class="fa fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Offcanvas Navigation End -->
+<div class="offcanvas-overlay"></div>
 
 <section class="hero" id="hero">
   <div class="hero__shape-bottomleft">

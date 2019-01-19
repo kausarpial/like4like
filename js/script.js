@@ -13,6 +13,15 @@ $(document).ready(function () {
     });
   }
   smoothScroll();
+
+  $('#offCanvas').on('click', function () {
+    $('.nav-offcanvas').addClass('open');
+    $('.offcanvas-overlay').addClass('on');
+  });
+  $('#offCanvasClose, .offcanvas-overlay, .page-scroll').on('click', function () {
+    $('.nav-offcanvas').removeClass('open');
+    $('.offcanvas-overlay').removeClass('on');
+  });
   // -----------------------------
   //  Headroom Initialize
   // -----------------------------
