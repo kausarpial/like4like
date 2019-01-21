@@ -14,6 +14,9 @@ $(document).ready(function () {
   }
   smoothScroll();
 
+  // Enable Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
   $('#offCanvas').on('click', function () {
     $('.nav-offcanvas').addClass('open');
     $('.offcanvas-overlay').addClass('on');
