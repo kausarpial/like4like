@@ -14,9 +14,7 @@ $(document).ready(function () {
   }
   smoothScroll();
 
-  // Enable Tooltip
-  $('[data-toggle="tooltip"]').tooltip();
-
+  // Off Canvas Menu
   $('#offCanvas').on('click', function () {
     $('.nav-offcanvas').addClass('open');
     $('.offcanvas-overlay').addClass('on');
@@ -56,11 +54,19 @@ $(document).ready(function () {
   // .to('.love-big', 0.5s, {scale : 1, opacity: 0, ease:Power1.easeIn});
   // TweenMax.to(timeline, 4, {progress: 1, yoyo: true, repeat: -1, ease:Power1.easeIn});
 
-  TweenMax.fromTo('.love-small', 4, 
+  TweenMax.fromTo('.love-small', 5, 
     { scale : 0, opacity: 1 }, 
     { scale : 1, opacity: 0, repeat: -1, ease: Power2.easeInOut}
   );
-  TweenMax.fromTo('.love-big', 4, 
+  TweenMax.fromTo('.love-small-2', 3.8, 
+    { scale : 0, opacity: 1 }, 
+    { scale : 1, opacity: 0, repeat: -1, ease: Power2.easeInOut}
+  );
+  TweenMax.fromTo('.love-big', 5, 
+    { scale : 0, opacity: 1 }, 
+    { scale : 1, opacity: 0, repeat: -1, ease: Power2.easeInOut}
+  );
+  TweenMax.fromTo('.love-big-2', 3.8, 
     { scale : 0, opacity: 1 }, 
     { scale : 1, opacity: 0, repeat: -1, ease: Power2.easeInOut}
   );
