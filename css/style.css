@@ -292,6 +292,12 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .main-nav .navbar-nav {
+    display: none;
+  }
+}
+
 .main-nav .nav-signin {
   margin-left: 20px;
 }
@@ -300,6 +306,12 @@ body {
   .main-nav .nav-signin {
     text-align: center;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-nav .nav-signin {
+    display: none;
   }
 }
 
@@ -522,6 +534,13 @@ body {
   .hero__shape-love-1 {
     z-index: 3;
     left: 0;
+    top: 55%;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero__shape-love-1 {
+    display: none;
   }
 }
 
