@@ -204,6 +204,87 @@ body {
   }
 }
 
+.love-animation-one {
+  position: absolute;
+  z-index: 3;
+  height: 80px;
+}
+
+.love-animation-one svg:first-child {
+  -webkit-animation-name: animate-love;
+          animation-name: animate-love;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  width: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 10%;
+}
+
+.love-animation-one svg:nth-child(2) {
+  -webkit-animation-name: animate-love;
+          animation-name: animate-love;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  width: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 50%;
+}
+
+.love-animation-one svg:last-child {
+  -webkit-animation-name: animate-love;
+          animation-name: animate-love;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  width: 15px;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@-webkit-keyframes animate-love {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate-love {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .main-nav {
   padding: 25px 30px;
 }
@@ -498,8 +579,15 @@ body {
 .hero__shape-love-1 {
   position: absolute;
   width: 75px;
-  top: 25%;
-  left: 53%;
+  top: 30%;
+  left: 50%;
+}
+
+@media (max-width: 1200px) {
+  .hero__shape-love-1 {
+    top: 22%;
+    left: 52%;
+  }
 }
 
 .hero__shape-love-1 svg {
@@ -519,26 +607,19 @@ body {
 
 @media (max-width: 991px) {
   .hero__shape-love-1 {
-    top: 55%;
-    left: 12%;
+    top: 57%;
+    left: 15%;
   }
 }
 
 @media (max-width: 767px) {
   .hero__shape-love-1 {
+    left: 12%;
     top: 60%;
   }
 }
 
 @media (max-width: 575px) {
-  .hero__shape-love-1 {
-    z-index: 3;
-    left: 0;
-    top: 55%;
-  }
-}
-
-@media (max-width: 400px) {
   .hero__shape-love-1 {
     display: none;
   }
@@ -674,6 +755,14 @@ body {
 .hero__content-btn {
   position: relative;
   width: 75%;
+}
+
+@media (max-width: 991px) {
+  .hero__content-btn {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .hero__content-btn .tips {
@@ -1793,9 +1882,8 @@ body {
 .about__image-love {
   position: absolute;
   width: 75px;
-  height: auto;
-  top: -80px;
-  right: 10%;
+  top: -50px;
+  right: 15%;
 }
 
 .about__image-love svg {
