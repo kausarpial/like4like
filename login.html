@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Like4Like</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- Stylesheets -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body data-spy="scroll" data-target="#mainNav">
+  
+
+<nav class="main-nav navbar navbar-expand-lg fixed-top" id="topNav">
+  <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand page-scroll" href="index.html#hero">
+          <img src="images/logo.png" alt="logo">
+      </a>
+      <!-- Toogle Button -->
+      <button class="navbar-toggler" type="button" id="offCanvas" data-toggle="collapse" data-target="#mainNav">
+          <span class="navbar-toggler-icon">
+            <img src="images/nav-toogler.png" alt="menu-button">
+          </span>
+      </button>
+      <div class="collapse navbar-collapse nav-list" id="mainNav">
+          <!-- Navigation Links -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="index.html#hero" >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="index.html#process">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="index.html#feature">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="index.html#review">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="index.html#about">About</a>
+            </li>
+          </ul>
+          <!-- Sign In Button -->
+          <div class="nav-signin">
+            <a href="#" class="btn btn-nav">
+              <span>Signin</span>
+              <i class="fa fa-instagram"></i>
+            </a>
+          </div>
+      </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Offcanvas Navigation Start -->
+<div class="nav-offcanvas">
+  <button type="button" class="close" id="offCanvasClose"></button>
+  <div class="nav-offcanvas-menu">
+    <ul>
+      <li><a href="index.html#hero" class="page-scroll">Home</a></li>
+      <li><a href="index.html#process" class="page-scroll">Process</a></li>
+      <li><a href="index.html#feature" class="page-scroll">Features</a></li>
+      <li><a href="index.html#review" class="page-scroll">Review</a></li>
+      <li><a href="index.html#about" class="page-scroll">About</a></li>
+      <li>
+        <a href="login.html">
+          Sign In
+          <i class="fa fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- Offcanvas Navigation End -->
+<div class="offcanvas-overlay"></div>
+
+<!-- Login Section Start -->
+<section class="login">
+  <div class="login__shape-bottomleft">
+    <img src="images/hero-bottom-left.svg" alt="bottom-left-shape">
+  </div>
+  <div class="login__shape-topright">
+    <img src="images/hero-top-right.svg" alt="top-right-shape">
+  </div>
+  <div class="login__shape-small">
+    <img src="images/banner/small-shapes.svg" alt="shape-small">
+  </div>
+  <div class="container">
+    <div class="row align-items-center justify-content-center _100vh">
+      <div class="col-lg-5 col-md-8">
+        <div class="login__card-wrapper">
+          <img src="images/banner/login-left.png" alt="login-left-shape" class="login__card-shapeLeft">
+          <img src="images/banner/login-right.png" alt="login-right-shape" class="login__card-shapeRight">
+          <div class="login__card">
+            <img src="images/logo-colored.png" alt="logo" class="logo">
+            <h6 class="title">
+              Login using your Instagram details
+              <br>
+              No registration needed, <span>100 likes on signup</span>
+            </h6>
+            <form action="#" class="login__form">
+              <input type="text" name="loginUsername" id="loginUsername" class="form-control" placeholder="Username">
+              <div class="login__form-field">
+                <input type="password" name="loginPassword" id="loginPassword" class="form-control" placeholder="Password">
+                <span class="fa fa-eye" id="showPassword"></span>
+              </div>
+              <button class="btn btn-block btn-secondary login__form-submit" type="submit">
+                Sign In
+                <i class="fa fa-instagram"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Login Section End -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- Smooth Scroll -->
+<script src="plugins/smooth-scroll/smooth-scroll.js"></script>
+<!-- Headroom Js -->
+<script src="plugins/headroomjs/headroomjs.js"></script>
+<!-- Match Height JS -->
+<script src="plugins/match-height/match-height.js"></script>
+<!-- TweenMax -->
+<script src="plugins/tweenmax/tweenmax.min.js"></script>
+<!-- Main Script -->
+<script src="js/script.js"></script>
+</body>
+</html>

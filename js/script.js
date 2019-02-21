@@ -14,6 +14,7 @@ $(document).ready(function () {
   }
   smoothScroll();
 
+  // Off Canvas Menu
   if(screen.width <= 480){
     $('#offCanvas').on('click', function () {
       $('.nav-offcanvas').addClass('open');
@@ -24,7 +25,17 @@ $(document).ready(function () {
       $('.offcanvas-overlay').removeClass('on');
     });
   }
-  // Off Canvas Menu
+
+  $('#showPassword').on('click', function(){
+    if($(this).hasClass('fa-eye')){
+      $(this).removeClass('fa-eye').addClass('fa-eye-slash');
+      $('#loginPassword').attr('type','text').focus();
+    } else{
+      $(this).removeClass('fa-eye-slash').addClass('fa-eye');
+      $('#loginPassword').attr('type','password').focus();
+    }
+  });
+
   // -----------------------------
   //  Headroom Initialize
   // -----------------------------
@@ -37,7 +48,7 @@ $(document).ready(function () {
         byRow: 0
     });
   }
-  TweenMax.fromTo('.hero__shape-small', 2, 
+  TweenMax.fromTo('.hero__shape-small, .login__shape-small', 2, 
     { y : 0, opacity: 1 }, 
     { y : 15, opacity: .5, repeat: -1, yoyo: true, ease: Power2.easeInOut}
   );
@@ -49,13 +60,6 @@ $(document).ready(function () {
     { y : 0 }, 
     { y : 10, repeat: -1, yoyo: true, ease: Power2.easeInOut}
   );
-  // Animate Love Big
-  // var timeline = new TimelineMax();
-  // timeline
-  // .to('.love-big', 0.5s, {scale : .5, opacity: 1, ease:Power1.easeIn})
-  // .to('.love-big', 0.5s, {scale : 1, opacity: 0, ease:Power1.easeIn});
-  // TweenMax.to(timeline, 4, {progress: 1, yoyo: true, repeat: -1, ease:Power1.easeIn});
-
   TweenMax.fromTo('.love-small', 5, 
     { scale : 0, opacity: 1 }, 
     { scale : 1, opacity: 0, repeat: -1, ease: Power2.easeInOut}

@@ -37,6 +37,11 @@ h5, .h5 {
   font-size: 18px;
 }
 
+h6, .h6 {
+  font-size: 15px;
+  line-height: 25px;
+}
+
 .btn-white {
   background: #fff;
   color: #eb5b7c;
@@ -283,6 +288,13 @@ body {
   100% {
     opacity: 0;
   }
+}
+
+.form-control {
+  background: #f6f9fa;
+  border: 1px solid #d4d4d4;
+  font-family: "Cuprum", sans-serif;
+  padding: 20px 30px;
 }
 
 .main-nav {
@@ -2137,6 +2149,183 @@ body {
   color: #fff;
   font-size: 17px;
   font-family: "Cuprum", sans-serif;
+}
+
+.login {
+  background: linear-gradient(108deg, #ff8e7f 0%, #ff579a 100%);
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .login {
+    height: auto;
+  }
+}
+
+.login__shape-bottomleft {
+  position: absolute;
+  width: 40%;
+  bottom: 0;
+  left: -10%;
+  opacity: .52;
+}
+
+.login__shape-bottomleft img {
+  width: 100%;
+}
+
+.login__shape-topright {
+  position: absolute;
+  width: 40%;
+  right: -5%;
+  top: -15%;
+}
+
+.login__shape-topright img {
+  width: 100%;
+}
+
+.login__shape-small {
+  position: absolute;
+  width: 80%;
+  top: 5%;
+  left: 10%;
+}
+
+@media (max-width: 1200px) {
+  .login__shape-small {
+    width: 100%;
+  }
+}
+
+.login__shape-small img {
+  width: 100%;
+}
+
+.login__card {
+  background: #fff;
+  box-shadow: 0px 45px 60px 0px rgba(25, 28, 33, 0.15);
+  text-align: center;
+  border-radius: 4px;
+  padding: 50px;
+}
+
+@media (max-width: 575px) {
+  .login__card {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .login__card {
+    padding: 30px 20px;
+    margin-top: 25px;
+  }
+}
+
+.login__card-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.login__card-shapeLeft {
+  position: absolute;
+  z-index: -1;
+  left: -45%;
+  bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .login__card-shapeLeft {
+    left: -28%;
+    width: 250px;
+  }
+}
+
+@media (max-width: 575px) {
+  .login__card-shapeLeft {
+    display: none;
+  }
+}
+
+.login__card-shapeRight {
+  position: absolute;
+  z-index: -1;
+  right: -33%;
+  bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .login__card-shapeRight {
+    width: 180px;
+    right: -20%;
+  }
+}
+
+@media (max-width: 575px) {
+  .login__card-shapeRight {
+    display: none;
+  }
+}
+
+.login__card .logo {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 400px) {
+  .login__card .logo {
+    margin-bottom: 10px;
+  }
+}
+
+.login__card .title {
+  color: #898989;
+  margin-bottom: 30px;
+}
+
+.login__card .title span {
+  font-family: "Cuprum", sans-serif;
+  color: #431fc1;
+}
+
+.login__form-field {
+  position: relative;
+}
+
+.login__form-field span {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #898989;
+  cursor: pointer;
+}
+
+.login__form-submit {
+  border: none;
+}
+
+.login__form-submit i {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.login__form input {
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+
+@media (max-width: 400px) {
+  .login__form input {
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=maps/style.css.map */
